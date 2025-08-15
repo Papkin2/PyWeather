@@ -6,7 +6,7 @@ Aplikacja na zaliczenie zajęć "Podstawy programowania w języku Python" do spr
 - biblioteki z pliku **requirements.txt**
 
 ## Instalacja
-1. Sklonuj repozytorium:
+1. Sklonuj repozytorium lub pobierz ręcznie:
 ```bash
 git clone https://github.com/twoja_nazwa/PyWeather.git
 
@@ -27,3 +27,4 @@ pip install -r requirements.txt
 2. aplikacja znajduje się w podanym adresie:
     - **http://127.0.0.1:5000**
     - **http://localhost:5000**  
+
