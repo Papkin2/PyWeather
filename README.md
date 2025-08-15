@@ -28,4 +28,6 @@ pip install -r requirements.txt
 ## Uruchamianie aplikacji
 1. W dowolnym edytorze języka python uruchomić plik **app.py**
 2. aplikacja znajduje w adresie:
-    - **http://localhost:5000** lub **http://127.0.0.1:5000**
+    - **http://127.0.0.1:5000**
+    - **http://localhost:5000**  
+    
