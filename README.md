@@ -4,7 +4,7 @@ Aplikacja na zaliczenie zajęć "Podstawy programowania w języku Python" do spr
 
 ## Wymagania
 - Python 3.9+
-- biblioteki z pliku requirements.txt
+- biblioteki z pliku **requirements.txt**
 
 ## Instalacja
 1. Sklonuj repozytorium:
@@ -13,7 +13,7 @@ git clone https://github.com/twoja_nazwa/PyWeather.git
 
 cd PyWeather
 ```
-2. Zainstaluj biblioteki w bashu:
+2. Zainstaluj biblioteki z pliku **requirements.txt** w bashu:
 ```bash
 pip install -r requirements.txt
 ```
