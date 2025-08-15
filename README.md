@@ -18,7 +18,7 @@ cd PyWeather
 pip install -r requirements.txt
 ```
 
-3. W pliku .env w głównym folderze projektu zmień Klucz API dla OpenWeatherMap:
+3. W głónym folderze projektu Stwórz plik .env i dodaj **API_KEY** i **SECRET_KEY** tak jak w .env.expample i zmień Klucz API dla OpenWeatherMap:
 
 - **API_KEY=wpisz_tutaj_swój_klucz_openweathermap**
 
