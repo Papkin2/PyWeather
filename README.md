@@ -25,8 +25,8 @@ pip install -r requirements.txt
 - **SECRET_KEY=dowolny_ciąg_znaków**
 
 ## Uruchamianie aplikacji
-1. W dowolnym edytorze języka python uruchomić plik **app.py**
-2. aplikacja znajduje w adresie:
+1. W dowolnym środowisku Python'a uruchomić plik **app.py**
+2. aplikacja znajduje się w podanym adresie:
     - **http://127.0.0.1:5000**
     - **http://localhost:5000**  
     
