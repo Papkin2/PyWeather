@@ -22,8 +22,7 @@ pip install -r requirements.txt
 
 - **API_KEY=wpisz_tutaj_swój_klucz_openweathermap**
 
-- SECRET_KEY(może pozostać jako dowolny ciąg znaków)
-**SECRET_KEY=tajny_klucz_flask**
+- **SECRET_KEY=dowolny_ciąg_znaków**
 
 ## Uruchamianie aplikacji
 1. W dowolnym edytorze języka python uruchomić plik **app.py**
