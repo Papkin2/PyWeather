@@ -18,7 +18,12 @@
             <input type="text" id="address" name="address" placeholder="Wpisz adres" class="form-control">
             <button class="btn btn-light">Szukaj</button>
         </form>
-        
+
+        {% if error %}
+            <div class="alert alert-danger">
+                {{ error }}</div>
+        {% endif %}
+
         {% if data %}
         <div class="weather-container">
             <div class="weather-main">
@@ -56,17 +61,18 @@
                     Brak danych o jakości powietrza (lokalizacja poza Polską)
                 </div>
                 {% endif %}
+                </div>
+
+                <div class="weather-chart">
+                    <h4>Prognoza na kolejne dni</h4>
+                    <canvas id="forecastChart"></canvas>
+                </div>
             </div>
 
-            <div class="weather-chart">
-                <h4>Prognoza na kolejne 5dni</h4>
-                <canvas id="forecastChart"></canvas>
+                <div id="map"></div>
             </div>
-        </div>
-
-        <div id="map"></div>
         {% endif %}
-    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
