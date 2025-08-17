@@ -47,11 +47,31 @@
                 {% if data.air %}
                 <div class="air-quality">
                     <h4>Jakość powietrza</h4>
-                    <div>Indeks: {{ data.air.air_quality_index }}</div>
-                    <div>PM10: {{ data.air.pm10 }} µg/m³
+                    <div>
+                        Stan powietrza: 
+                        {% if data.air.air_quality_index %}
+                            {{ data.air.air_quality_index }}
+                        {% else %}
+                            Brak danych
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        PM10: 
+                        {% if data.air.pm10%}
+                            {{ data.air.pm10 }} µg/m³
+                        {% else %}
+                            Brak danych
+                        {% endif %}
                         {% if data.air.pm10_norm %} ({{ data.air.pm10_norm }}% normy){% endif %}
                     </div>
-                    <div>PM2.5: {{ data.air.pm25 }} µg/m³
+                    <div>
+                        PM2.5:
+                        {% if data.air.pm25%} 
+                            {{ data.air.pm25 }} µg/m³
+                        {% else %}
+                            Brak danych
+                        {% endif %}
                         {% if data.air.pm25_norm %} ({{ data.air.pm25_norm }}% normy){% endif %}
                     </div>
                 </div>
