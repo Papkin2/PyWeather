@@ -22,7 +22,7 @@ pip install -r requirements.txt
 - **API_KEY=wpisz_tutaj_swój_klucz_openweathermap**
 - **SECRET_KEY=dowolny_ciąg_znaków**
 
-4. OpenWeatherAPI można pobrać na stronie **https://openweathermap.org/**. Wystarczy się zarejestrować i wejść w zakładkę:
+4. Klucz OpenWeatherAPI można pobrać na stronie **https://openweathermap.org/**. Wystarczy się zarejestrować (aplikacja korzysta z darmowej wersji api) i wejść w zakładkę:
    - Konto --> My API keys
 
 ## Uruchamianie aplikacji
@@ -30,6 +30,7 @@ pip install -r requirements.txt
 2. aplikacja znajduje się w podanym adresie:
     - **http://127.0.0.1:5000**
     - **http://localhost:5000**  
+
 
 
 
