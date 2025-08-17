@@ -11,11 +11,17 @@ app.secret_key = os.getenv('SECRET_KEY')
 def index():
     if request.method == 'POST':
         addr = request.form['address']
-        session['data'] = get_weather(addr) 
-        return redirect(url_for('index'))   
-     
-    data = session.pop('data', None)  
-    return render_template('index.html', data=data)
+        data = get_weather(addr)
+        
+        if data is None:
+            error = "Podano nieprawidłowy adres"
+            return render_template('index.html', error=error)
+        else: 
+            session['data'] = data
+            return redirect(url_for('index'))   
+
+    data = session.pop('data', None)
+    return render_template('index.html', data=data, error=None)
 
 if __name__ == '__main__':
     app.run(debug=True)
