@@ -80,7 +80,6 @@ def get_current_weather(lat, lon, API_key):
 def get_weather_forecast(lat, lon , API_key):
     url = f'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API_key}&lang=pl&units=metric'
     resp = requests.get(url).json()
-
     forecasts = []
 
     for entry in resp["list"]:
@@ -135,7 +134,7 @@ def get_nearest_station(lat, lon):
                     closest_station = station
             except(KeyError, ValueError):
                 continue
-
+            
         next_page = stations.get('links').get('next')
         url = next_page
         response = requests.get(url)  
@@ -229,7 +228,7 @@ def main(addr):
         "lon": lon,
         "weather": weather_data,
         "forecast": weather_forecast,
-        "air": None
+        "air": None,
     }
     
     if is_in_poland(lat, lon):
@@ -251,7 +250,7 @@ def main(addr):
 
     return result
 
-    
+#do testowania w konsoli    
 if __name__ == "__main__":
     while True: 
         addr = input('Podaj adres: ')
