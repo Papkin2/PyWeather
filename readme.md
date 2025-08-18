@@ -1,5 +1,5 @@
 # PyWeather - Aplikacja pogodowa
-Aplikacja na zaliczenie zajęć "Podstawy programowania w języku Python" do sprawdzania pogody i jakości powietrza.
+Aplikacja na zaliczenie zajęć "Programowanie w języku Python" do sprawdzania pogody i jakości powietrza.
 
 ## Wymagania
 - Python 3.9+
@@ -30,6 +30,7 @@ pip install -r requirements.txt
 2. aplikacja znajduje się w podanym adresie:
     - **http://127.0.0.1:5000**
     - **http://localhost:5000**  
+
 
 
 
